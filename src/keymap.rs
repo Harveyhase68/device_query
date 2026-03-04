@@ -92,8 +92,12 @@ pub enum Keycode {
     PageDown,
     Insert,
     Delete,
+    PrintScreen,
+    ScrollLock,
+    Pause,
+    NumLock,
 
-    // Numpad keys which have not been implemented: NumpadSeparator NumLock
+    // Numpad keys which have not been implemented: NumpadSeparator
     Numpad0,
     Numpad1,
     Numpad2,
@@ -220,6 +224,10 @@ impl FromStr for Keycode {
             "PageDown" => Ok(Self::PageDown),
             "Insert" => Ok(Self::Insert),
             "Delete" => Ok(Self::Delete),
+            "PrintScreen" => Ok(Self::PrintScreen),
+            "ScrollLock" => Ok(Self::ScrollLock),
+            "Pause" => Ok(Self::Pause),
+            "NumLock" => Ok(Self::NumLock),
             "Numpad0" => Ok(Self::Numpad0),
             "Numpad1" => Ok(Self::Numpad1),
             "Numpad2" => Ok(Self::Numpad2),
