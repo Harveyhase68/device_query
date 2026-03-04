@@ -110,6 +110,7 @@ pub const KEY_DELETE: u16 = 111;
 pub const KEY_NUMLOCK: u16 = 69;
 pub const KEY_SCROLLLOCK: u16 = 70;
 pub const KEY_SYSRQ: u16 = 99;
+pub const KEY_102ND: u16 = 86;
 pub const KEY_KPEQUAL: u16 = 117;
 pub const KEY_PAUSE: u16 = 119;
 pub const KEY_LEFTMETA: u16 = 125;

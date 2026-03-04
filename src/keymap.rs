@@ -129,6 +129,10 @@ pub enum Keycode {
     Comma,
     Dot,
     Slash,
+    /// The extra key found on ISO keyboards between LeftShift and Z.
+    /// Known as VK_OEM_102 on Windows, KEY_102ND (86) on Linux.
+    /// Typically produces `<` `>` `|` on German/Nordic layouts.
+    OEM102,
 }
 
 impl FromStr for Keycode {
@@ -252,6 +256,7 @@ impl FromStr for Keycode {
             "Comma" => Ok(Self::Comma),
             "Dot" => Ok(Self::Dot),
             "Slash" => Ok(Self::Slash),
+            "OEM102" => Ok(Self::OEM102),
             _ => Err(String::from("failed to parse keycode")),
         }
     }
